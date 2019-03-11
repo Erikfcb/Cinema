@@ -1,0 +1,54 @@
+.movieCard {
+  position: relative;
+  height: 21.5vw;
+  width: 15vw;
+  margin: 1vw 1vw;
+  margin-bottom: calc(1vw + 50px);
+  transition: 0.5s;
+  background-size: cover;
+  border-radius: 5px, 5px, 0, 0;
+}
+
+.getMovieBtn:hover {
+  cursor: pointer;
+}
+
+.getMovieBtn {
+  border-radius: 5px, 5px, 0, 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.112);
+}
+
+.getMovieBtn:hover {
+  background: rgba(0, 0, 0, 0);
+}
+.movieTitle {
+  color: #c60202;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px, 5px 0 0;
+}
+
+@media screen and (max-width: 1440px) {
+  .movieTitle {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .movieTitle {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movieCard {
+    width: 25vw;
+  height: 37.5vw;   
+  margin: 4vw 4.16vw;
+   
+  }
+}

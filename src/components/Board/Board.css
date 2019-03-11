@@ -1,0 +1,44 @@
+.board {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boardWrap {
+  position: relative;
+  top: 10vh;
+  left: 15vw;  
+  padding-top: 10vh;
+  user-select: none;
+  width: 85vw;
+}
+
+.boardTitle {
+  height: 5vh;
+  width: calc(100%-1vw);
+  color: rgb(57, 57, 57);
+  font-size: 1.7em;
+  position: absolute;
+  left: 1vw;
+  top: 4vh;
+}
+
+.addButton {
+  position: fixed;
+  top: 80vh;
+  right: 2vw;
+  background-color: rgb(187, 4, 4);
+  color: white;
+  font-size: 1.5em;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 15px -1px rgba(4, 4, 4, 0.571);
+  z-index: 4;
+}
+
+@media screen and (max-width: 768px) {
+  .boardWrap {
+    width: 100vw;
+    top: 20vh;
+    left: 0;
+  }
+}

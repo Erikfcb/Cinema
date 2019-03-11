@@ -1,0 +1,274 @@
+.hide {
+  transform: scale(0) !important;
+}
+
+.show {
+  height: scale(1) !important;
+}
+
+.popup {
+  position: fixed;
+  top: 25vh;
+  left: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  width: 40vw;
+  background-color: #181818fa;
+  color: rgb(233, 233, 233);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.poster {
+  position: relative;
+  left: 20px;
+  height: 90%;
+  width: 40%;
+  background-size: cover;
+}
+
+.movieDetails {
+  position: relative;
+  width: 55%;
+  padding-right: 20px;
+  height: 90%;
+}
+
+.titleAndDate {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.movieGenre {
+  margin-bottom: 20px;
+  color: rgb(116, 116, 116);
+}
+
+.movieDate {
+  font-size: 1em;
+}
+
+.detailLabel {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-right: 5px;
+}
+.movieId,
+.movieRuntime,
+.movieDirector,
+.movieDate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.edit {
+  position: absolute;
+  bottom: 1vh;
+  left: 1vw;
+  width: 80px;
+}
+
+.delete {
+  position: absolute;
+  right: 1vw;
+  bottom: 1vh;
+  width: 80px;
+}
+
+.closeIcon {
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50% !important;
+  background-color: rgb(121, 121, 121);
+  padding: 5px;
+  font-size: 20px;
+}
+
+.editForm {
+  width: 90%;
+  padding: 5%;
+  margin: 0 auto;
+}
+
+.errorMessage {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(238, 72, 72);
+}
+
+.saveEditBtn {
+  position: absolute !important;
+  left: 4vw !important;
+}
+
+.cancelEditBtn {
+  position: absolute !important;
+  right: 4vw !important;
+}
+
+@media screen and (max-width: 1440px) {
+  .form-control {
+    height: 30px !important;
+    font-size: 0.8em !important;
+  }
+
+  .movieId,
+  .movieRuntime,
+  .movieDirector,
+  .movieDate {
+    font-size: 0.8em;
+  }
+
+  .title {
+    font-size: 1.3em;
+  }
+
+  .movieDetails {
+    padding-left: 20px;
+  }
+
+  .edit {
+    width: 60px;
+    font-size: 0.8em !important;
+  }
+
+  .submitAddBtn {
+    width: 60px;
+    font-size: 0.8em !important;
+  }
+
+  .delete {
+    width: 60px;
+    font-size: 0.8em !important;
+    right: 3vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .movieGenre {
+    font-size: 0.7em;
+  }
+  .title {
+    font-size: 1.2em;
+  }
+  .movieId,
+  .movieRuntime,
+  .movieDirector,
+  .movieDate {
+    font-size: 0.6em;
+  }
+
+  .popup {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .editForm {
+    position: absolute;
+    width: 70%;
+    top: 10%;
+    left: 15%;
+  }
+
+  .form-control {
+    height: 20px !important;
+    font-size: 0.6em !important;
+  }
+
+  .form-group {
+    margin-bottom: 0 !important;
+  }
+
+  .label {
+    font-size: 0.6em;
+    margin-bottom: 0;
+  }
+
+  .popup {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poster {
+    width: 100%;
+    height: 50%;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .movieDetails {
+    width: 100%;
+    height: 50%;
+    padding-left: 5px;
+    padding-right: 0;
+  }
+
+  .movieGenre {
+    font-size: 0.5em;
+    margin-bottom: 10px;
+  }
+  .title {
+    margin-top: 5px;
+    font-size: 0.7em;
+  }
+  .movieId,
+  .movieRuntime,
+  .movieDirector,
+  .movieDate {
+    font-size: 0.4em;
+  }
+
+  .submitAddBtn {
+    width: 50px;
+    font-size: 0.5em !important;
+    margin-top: 10px;
+  }
+
+  .edit {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 50px;
+    height: 20px;
+    font-size: 0.5em !important;
+    left: 3vw;
+  }
+
+  .delete {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    width: 50px;
+    height: 20px;
+    font-size: 0.5em !important;
+  }
+
+  .saveEditBtn {
+    width: 50px;
+    font-size: 0.5em !important;
+    margin-top: 10px;
+    left: 2vw !important;
+  }
+
+  .cancelEditBtn {
+    width: 50px;
+    right: 2vw !important;
+    font-size: 0.5em !important;
+    margin-top: 10px;
+  }
+}
